@@ -25,13 +25,22 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
+### Create .env file
+
+````bash
+EXPO_PUBLIC_SUPABASE_URL=HTTPS://SUPABASE_USERNAME.supabase.co
+EXPO_PUBLIC_SUPABASE_ANON_KEY=SUPABASE_KEY
+DATABASE_URL=postgresql://postgres.SUPABASE_USERNAME:SUPABASE_PASSWORD@aws-0-us-west-1.pooler.supabase.com:5432/postgres
+EXPO_PUBLIC_GIPHY_API_KEY=GIPHY_KEY
+EXPO_PUBLIC_GOOGLE_MAPS_API_KEY=GOOGLE_MAPS_KEY
+EXPO_PUBLIC_BUCKET_URL=https://SUPABASE_USERNAME.supabase.co/storage/v1/object/public/files
 ## Get a fresh project
 
 When you're ready, run:
 
 ```bash
 npm run reset-project
-```
+````
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
